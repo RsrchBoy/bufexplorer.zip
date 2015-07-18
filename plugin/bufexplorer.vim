@@ -114,7 +114,9 @@ let s:tabSpace = []
 let s:types = {"fullname": ':p', "path": ':p:h', "relativename": ':~:.', "relativepath": ':~:.:h', "shortname": ':t'}
 
 " Setup the autocommands that handle the MRUList and other stuff. {{{2
-autocmd VimEnter * call s:Setup()
+augroup BufExplorer
+    autocmd VimEnter * call s:Setup()
+augroup END
 
 " Setup {{{2
 function! s:Setup()
