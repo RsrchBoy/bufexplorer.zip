@@ -486,9 +486,9 @@ function! s:SetupSyntax()
 
         hi def link bufExplorerBufNbr Number
         hi def link bufExplorerMapping NonText
-        hi def link bufExplorerHelp Special
+        hi def link bufExplorerHelp Comment
         hi def link bufExplorerOpenIn Identifier
-        hi def link bufExplorerSortBy String
+        hi def link bufExplorerSortBy Comment
         hi def link bufExplorerSplit NonText
         hi def link bufExplorerTitle NonText
         hi def link bufExplorerSortType bufExplorerSortBy
@@ -496,9 +496,9 @@ function! s:SetupSyntax()
         hi def link bufExplorerToggleOpen bufExplorerOpenIn
 
         hi def link bufExplorerActBuf Identifier
-        hi def link bufExplorerAltBuf String
+        hi def link bufExplorerAltBuf Normal
         hi def link bufExplorerCurBuf Type
-        hi def link bufExplorerHidBuf Constant
+        hi def link bufExplorerHidBuf Ignore
         hi def link bufExplorerLockedBuf Special
         hi def link bufExplorerModBuf Exception
         hi def link bufExplorerUnlBuf Comment
